@@ -38,9 +38,14 @@ func main() {
 		// plan9, windows...
 		fmt.Printf("%s.", os)
 	}
+	p := []int{2, 3, 5, 7, 11, 13}
 
+	p = append(p, 12)
+	print(p)
 	fmt.Println("counting")
-
+	for i, v := range p {
+		fmt.Printf("2**%d = %d\n", i, v)
+	}
 	for i := 0; i < 10; i++ {
 		defer fmt.Println(i)
 	}
